@@ -5,14 +5,14 @@ import Link from 'next/link';
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const navItems = [
-    { text: "Explore", href: "/explore" },
-    { text: "Trends", href: "/trends" },
-    { text: "For Employers", href: "/employers" },
+    { text: "Home", href: "/" },
+    { text: "About", href: "/about" },
+    { text: "Contact", href: "/contact" },
   ];
 
   return (
     <header className="text-base">
-      <nav className="flex justify-between items-center py-4 px-6 md:px-12">
+      <nav className="flex justify-between text-3xl font-bold italic items-center py-4 px-6 md:px-12">
         <Link href="/">
           <img
             src="Lemtech logo.jpg"

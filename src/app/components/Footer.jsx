@@ -10,7 +10,6 @@ import Link from "next/link";
 export default function Footer() {
   const footerLinks = [
     { text: "About Us", href: "/about" },
-    { text: "For entry-level Techies", href: "/entry-level" },
     { text: "For Employers/Companies", href: "/employers" },
     { text: "Resources", href: "/resources" },
     { text: "Blog", href: "/blog" },
@@ -32,7 +31,7 @@ export default function Footer() {
         {/* Logo and Social Icons */}
         <div className="space-y-4">
           <Link href="/">
-            <img src="/skilloft.png" alt="Skilloft logo" width={140} />
+            <img src="/Lemtech logo.jpg" alt="Lemtech Hub Nigeria logo" width={120} />
           </Link>
           <div className="flex gap-4 text-2xl text-black">
             {socials.map((social, index) => (
@@ -61,7 +60,7 @@ export default function Footer() {
         {/* Copyright Section */}
         <div className="text-center md:text-left">
           <p className="text-sm">
-            ©2024 Skilloft.
+            ©2024 Lemtech Hub Nigeria.
             <br /> All rights reserved.
           </p>
         </div>
