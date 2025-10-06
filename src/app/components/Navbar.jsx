@@ -7,17 +7,20 @@ export default function Navbar() {
   const navItems = [
     { text: "Home", href: "/" },
     { text: "About", href: "/about" },
+    { text: "Services", href: "/services" },
+    { text: "Projects", href: "/projects" },
+    { text: "Testimonials", href: "/testimonials" },
     { text: "Contact", href: "/contact" },
   ];
 
   return (
     <header className="text-base">
-      <nav className="flex justify-between text-3xl font-bold italic items-center py-4 px-6 md:px-12">
+      <nav className=" fixed top-0 left-0 w-full z-30 flex justify-between text-white bg-indigo-900 font-light hover:text-yellow-300 items-center py-2 px-4 md:px-12">
         <Link href="/">
           <img
             src="Lemtech logo.jpg"
             alt="lemtechlogo logo"
-            className="w-28 md:w-36"
+            className="w-20 md:w-30"
           />
         </Link>
 
@@ -30,18 +33,6 @@ export default function Navbar() {
             ))}
           </ul>
         </div>
-
-        <div className="hidden md:flex gap-4">
-          <Link href="/login">
-            <button className="py-2 rounded-lg">Login</button>
-          </Link>
-          <Link href="/signup">
-            <button className="px-6 py-2 rounded-xl bg-[#FFD700]">
-              Sign Up
-            </button>
-          </Link>
-        </div>
-
         <button
           className="block md:hidden"
           onClick={() => setMenuOpen(!menuOpen)}
@@ -71,16 +62,6 @@ export default function Navbar() {
                 <Link href={page.href}>{page.text}</Link>
               </li>
             ))}
-            <div className="flex flex-col gap-4 w-full">
-              <Link href="/login">
-                <button className="py-2 rounded-lg w-full">Login</button>
-              </Link>
-              <Link href="/signup">
-                <button className="py-2 rounded-xl bg-[#FFD700] w-full">
-                  Sign Up
-                </button>
-              </Link>
-            </div>
           </ul>
         </div>
       )}

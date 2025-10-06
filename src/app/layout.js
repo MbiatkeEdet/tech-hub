@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Lemtech Hub Nigeria | Your Gateway to Tech Careers",
+  title: "Lemtech Hub Nigeria | Shaping The Future With Cutting-Edge IT Solutions",
   description: "IT service company  based in port harcourt, Nigeria",
 };
 
