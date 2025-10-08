@@ -20,7 +20,7 @@ export default function Navbar() {
           <img
             src="Lemtech logo.jpg"
             alt="lemtechlogo logo"
-            className="w-20 md:w-30"
+            className="w-10 md:w-10"
           />
         </Link>
 

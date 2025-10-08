@@ -271,6 +271,7 @@ import {
   FaCheckCircle,
 } from "react-icons/fa";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 export default function ServicesPage() {
   return (
@@ -282,9 +283,9 @@ export default function ServicesPage() {
         <div className="absolute inset-0 bg-black/60" />
         <div className="relative z-10 max-w-3xl mx-auto">
           <h2 className="text-5xl uppercase underline decoration-blue-500 decoration-2 hover:underline decoration decoration-green-600 mt-6 font-bold mb-4">Services</h2>
-          <p className="text-lg">
+          <p className="text-3xl font-light">
             We help our clients achieve their goals with our start-up and
-            corporate experience in design, coding and mobile development.
+            corporate experience in design, coding and web development.
           </p>
         </div>
       </section>
@@ -456,6 +457,7 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
+      <Footer />
     </main>
     </>
   );

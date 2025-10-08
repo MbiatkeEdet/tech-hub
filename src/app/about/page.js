@@ -3,6 +3,7 @@ import React from "react";
 import { FaLaptopCode, FaIndustry, FaLightbulb, FaProjectDiagram } from "react-icons/fa";
 import { MdScience } from "react-icons/md";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const AboutUs = () => {
   return (
@@ -87,7 +88,7 @@ const AboutUs = () => {
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center bg-black/50 p-6 rounded-2xl">
           <div className="space-y-4">
             <MdScience size={40} className="text-green-400" />
-            <h3 className="text-2xl font-semibold">Always on the Cutting Edge</h3>
+            <h3 className="text-2xl font-bold">Always on the Cutting Edge</h3>
             <p>
               Our team stays ahead of the curve by following the latest global
               tech trends in big data, AI, biotechnology, materials, and more.
@@ -106,15 +107,17 @@ const AboutUs = () => {
       <div className="py-16 px-6 bg-gray-100">
         <div className="max-w-6xl mx-auto text-center space-y-4">
           <FaProjectDiagram size={40} className="text-purple-600 mx-auto" />
-          <h3 className="text-2xl font-semibold">Our Process</h3>
-          <p className="max-w-3xl mx-auto">
+          <h3 className="text-5xl font-bold">Our Process</h3>
+          <p className="max-w-3xl mx-auto text-3xl font-light">
             We’ve designed a unique way of working with partners—offering maximum
             value through our combined experience with both startups and
             corporations. It’s efficient, collaborative, and impactful.
           </p>
         </div>
       </div>
+      
     </section>
+    <Footer />
     </>
   );
 };

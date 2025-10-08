@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import Navbar from "../components/Navbar";
 
 const ClearingForm = () => {
   const [consignees, setConsignees] = useState(["Consignee A", "Consignee B"]);
@@ -97,7 +98,9 @@ const ClearingForm = () => {
   }, [records]);
 
   return (
-    <div className="max-w-6xl mx-auto bg-white p-6 shadow-lg rounded-2xl mt-6">
+    
+    <div className="max-w-6xl mx-auto bg-gray-300 p-6 shadow-lg rounded-2xl mt-6">
+      <Navbar />
       <h2 className="text-3xl font-bold mb-8 uppercase text-center text-gray-700">
         Clearing & Forwarding Record
       </h2>
@@ -131,7 +134,7 @@ const ClearingForm = () => {
         </h3>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4">
           <div>
-            <label className="block text-sm font-medium">Consignee</label>
+            <label className="block text-md uppercase font-bold">Consignee</label>
             <select
               name="consignee"
               value={form.consignee}
@@ -164,7 +167,7 @@ const ClearingForm = () => {
           </div>
 
           <div>
-            <label className="block text-sm font-medium">Shipper</label>
+            <label className="block text-md uppercase font-bold">Shipper</label>
             <input
               type="text"
               name="shipper"
@@ -183,7 +186,7 @@ const ClearingForm = () => {
             { name: "duty", label: "Duty" },
           ].map((fee, i) => (
             <div key={i}>
-              <label className="block text-sm font-medium">{fee.label}</label>
+              <label className="block text-md uppercase font-bold">{fee.label}</label>
               <input
                 type="number"
                 name={fee.name}
@@ -203,7 +206,7 @@ const ClearingForm = () => {
         </h3>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           <div>
-            <label className="block text-sm font-medium">Total Fees</label>
+            <label className="block text-md uppercase font-bold">Total Fees</label>
             <input
               type="text"
               readOnly
@@ -212,7 +215,7 @@ const ClearingForm = () => {
             />
           </div>
           <div>
-            <label className="block text-sm font-medium">Amount Received</label>
+            <label className="block text-md uppercase font-bold">Amount Received</label>
             <input
               type="number"
               name="received"
@@ -222,7 +225,7 @@ const ClearingForm = () => {
             />
           </div>
           <div>
-            <label className="block text-sm font-medium">Date</label>
+            <label className="block text-md uppercase font-bold">Date</label>
             <input
               type="date"
               name="date"
@@ -232,7 +235,7 @@ const ClearingForm = () => {
             />
           </div>
           <div>
-            <label className="block text-sm font-medium">Bank</label>
+            <label className="block text-md uppercase font-bold">Bank</label>
             <input
               type="text"
               name="bank"
