@@ -4,6 +4,7 @@ import { MdEmail, MdPhone, MdLocationOn, MdSend } from 'react-icons/md';
 import { FaTelegramPlane } from 'react-icons/fa';
 import { BsTwitterX } from 'react-icons/bs';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -35,49 +36,49 @@ const ContactPage = () => {
     {
       icon: <MdEmail className="text-2xl" />,
       title: "Email Us",
-      detail: "finear.app@gmail.com",
-      href: "mailto:finear.app@gmail.com"
+      detail: "lemtechhub@gmail.com",
+      href: "mailto:lemtechhub@gmail.com"
     },
     {
       icon: <FaTelegramPlane className="text-2xl" />,
       title: "Telegram",
-      detail: "@Finear_app",
-      href: "https://t.me/Finear_app"
+      detail: "@lemtechhub",
+      href: "https://t.me/lemtechhub"
     },
     {
       icon: <BsTwitterX className="text-2xl" />,
       title: "Twitter",
-      detail: "@Finear_app",
-      href: "https://www.twitter.com/@Finear_app"
+      detail: "@lemtechhub",
+      href: "https://www.twitter.com/@lemtechhub"
     }
   ];
 
   return (
     <>
     <Navbar />
-    <div className="bg-gray-600 min-h-screen">
+    <div className="bg-white min-h-screen">
       
       <div className="pt-20 pb-16 px-6 md:px-12">
         <div className="max-w-7xl mx-auto">
           {/* Hero Section */}
           <div className="text-center mt-6 mb-16">
-            <h1 className="text-4xl md:text-6xl font-bold text-white mt-8">
-              Get in <span className="text-yellow-400">Touch</span>
+            <h1 className="text-4xl md:text-6xl font-bold text-black mt-8">
+              Get in <span className="text-blue-500">Touch</span>
             </h1>
-            <p className="text-xl text-indigo-200 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-black max-w-3xl mx-auto leading-relaxed">
               Want to discuss about your product or partnerships? <br />We are here to help you!
             </p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-indigo-800">
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-blue-800">
               <h2 className="text-2xl font-semibold text-white mb-6">Send us a Message</h2>
               
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-indigo-200 mb-2">
+                    <label htmlFor="name" className="block text-md font-bold text-black mb-2">
                       Full Name
                     </label>
                     <input
@@ -87,13 +88,13 @@ const ContactPage = () => {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 bg-indigo-800/50 border border-indigo-700 rounded-lg text-white placeholder-indigo-300 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition"
+                      className="w-full px-4 py-3 bg-white border border-blue-700 rounded-lg text-black placeholder-indigo-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition"
                       placeholder="John Doe"
                     />
                   </div>
                   
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-indigo-200 mb-2">
+                    <label htmlFor="email" className="block text-sm font-bold text-black mb-2">
                       Email Address
                     </label>
                     <input
@@ -103,14 +104,14 @@ const ContactPage = () => {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 bg-indigo-800/50 border border-indigo-700 rounded-lg text-white placeholder-indigo-300 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition"
+                      className="w-full px-4 py-3 bg-white border border-indigo-700 rounded-lg text-black placeholder-indigo-300 focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent transition"
                       placeholder="john@example.com"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-indigo-200 mb-2">
+                  <label htmlFor="subject" className="block text-sm font-bold text-black mb-2">
                     Subject
                   </label>
                   <input
@@ -120,13 +121,13 @@ const ContactPage = () => {
                     value={formData.subject}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-indigo-800/50 border border-indigo-700 rounded-lg text-white placeholder-indigo-300 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition"
+                    className="w-full px-4 py-3 bg-white border border-indigo-700 rounded-lg text-black placeholder-indigo-300 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition"
                     placeholder="How can we help you?"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-indigo-200 mb-2">
+                  <label htmlFor="message" className="block text-sm font-bold text-black mb-2">
                     Message
                   </label>
                   <textarea
@@ -136,7 +137,7 @@ const ContactPage = () => {
                     onChange={handleChange}
                     required
                     rows={6}
-                    className="w-full px-4 py-3 bg-indigo-800/50 border border-indigo-700 rounded-lg text-white placeholder-indigo-300 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition resize-none"
+                    className="w-full px-4 py-3 bg-white border border-indigo-700 rounded-lg text-black placeholder-indigo-300 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition resize-none"
                     placeholder="Tell us more about your inquiry..."
                   />
                 </div>
@@ -144,7 +145,7 @@ const ContactPage = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-gradient-to-r from-yellow-400 to-yellow-500 text-indigo-900 px-8 py-4 rounded-lg font-semibold hover:from-yellow-500 hover:to-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-offset-2 focus:ring-offset-indigo-900 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                  className="w-full bg-gradient-to-r from-blue-400 to-yellow-500 text-indigo-900 px-8 py-4 rounded-lg font-semibold hover:from-yellow-500 hover:to-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-offset-2 focus:ring-offset-indigo-900 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
                 >
                   {isSubmitting ? (
                     <>
@@ -189,7 +190,7 @@ const ContactPage = () => {
               </div>
 
               {/* FAQ Section */}
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-indigo-800">
+              {/* <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-indigo-800">
                 <h3 className="text-xl font-semibold text-white mb-6">Quick FAQ</h3>
                 <div className="space-y-4">
                   <div>
@@ -205,11 +206,12 @@ const ContactPage = () => {
                     <p className="text-indigo-200 text-sm">We&#39;ll have both free and premium features. Stay tuned for more details about our pricing structure.</p>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
       </div>
+      <Footer />
     </div>
     </>
   );

@@ -9,10 +9,10 @@ const AboutUs = () => {
   return (
     <>
     <Navbar />
-    <section className="text-gray-800">
+    <section className="text-blue-800">
       {/* Hero Section */}
       <div
-        className="relative bg-cover bg-center text-white py-20 px-6"
+        className="relative bg-center text-white py-20 px-6"
         style={{ backgroundImage: "url('https://images.unsplash.com/photo-1523531294911-5fd93221c4fe?auto=format&fit=crop&w=1600&q=80')" }}
       >
         <div className="max-w-4xl mx-auto mt-16 text-center space-y-6 bg-black/40 p-6 rounded-2xl">
@@ -26,7 +26,7 @@ const AboutUs = () => {
       </div>
 
       {/* Team Identity */}
-      <div className="py-16 px-6 mb-5 bg-gray-100">
+      <div className="py-16 px-6 mb-5 bg-blue-100">
         <div className="max-w-6xl mb-5 mx-auto text-center space-y-4">
           <h2 className="text-2xl mb-6 md:text-4xl uppercase font-semibold">About Us</h2>
           <p className="max-w-3xl mx-auto text-lg">
@@ -107,7 +107,7 @@ const AboutUs = () => {
       <div className="py-16 px-6 bg-gray-100">
         <div className="max-w-6xl mx-auto text-center space-y-4">
           <FaProjectDiagram size={40} className="text-purple-600 mx-auto" />
-          <h3 className="text-5xl font-bold">Our Process</h3>
+          <h3 className="text-3xl font-bold">Our Process</h3>
           <p className="max-w-3xl mx-auto text-3xl font-light">
             We’ve designed a unique way of working with partners—offering maximum
             value through our combined experience with both startups and
